@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clueless Movie Quote Generator</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="title">
+            <svg>
+                <ellipse cx="50%" cy="100%" rx="75%" ry="60%" style="fill:#00E141;stroke-width:3;
+                stroke:rgb(0,0,0);"></ellipse>
+            </svg>
+            <h1>I remember Mel Gibson accurately</h1>
+            <h2>Clueless quote generator</h2>
+        </div>
+        <!-- Image and quote container -->
+        <div id="mainContent">
+            <!-- Image -->
+            <div class="quote-image animated loading">
+                <img id="theImage" src="images/default.gif" />
+
+            </div>
+            <div class="quote-container animated loading" id="qoute-container">
+                <!-- Quote -->
+                <div class="quote-text">
+                    <div class="textWrap">
+                        <i class="fas fa-quote-left"></i>
+                        <span id="theQuote">Well, I remember Mel Gibson accurately, and he didn't say that. That
+                            Polonius guy did.</span>
+                        <i class="fas fa-quote-right"></i>
+                        <span id="theAuthor">Cher</span>
+                    </div>
+                </div>
+                <!-- Buttons -->
+                <div class="buttons button-container">
+                    <button class="twitter-button" id="twitter" title="Tweet this!">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button id="new-quote">New Quote</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- Script  -->
+    <script src="quotes.js"></script>
+    <script src="script.js"></script>
+    <!-- Script  -->
+
+</body>
+
+</html>
